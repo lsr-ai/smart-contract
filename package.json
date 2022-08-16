@@ -1,0 +1,28 @@
+{
+  "name": "nft-smart-contract",
+  "version": "1.2.0",
+  "description": "NFT smart contract",
+  "author": {
+    "name": "QUIC-PRO Inc.",
+    "email": "developers@quic.pro"
+  },
+  "license": "GPL-3.0-or-later",
+  "scripts": {
+    "lint": "solhint 'contracts/**/*.sol'",
+    "coverage": "node --max-old-space-size=4096 ./node_modules/.bin/truffle run coverage",
+    "test": "truffle test",
+    "build": "truffle compile",
+    "deploy:rinkeby": "truffle deploy --network rinkeby --reset",
+    "deploy:eth": "truffle deploy --network eth --reset"
+  },
+  "devDependencies": {
+    "@openzeppelin/contracts": "^4.7.2",
+    "@truffle/hdwallet-provider": "^2.0.13",
+    "dotenv": "^16.0.1",
+    "envalid": "^7.3.1",
+    "solhint": "^3.3.7",
+    "solidity-coverage": "^0.7.21",
+    "truffle": "^5.5.25",
+    "truffle-plugin-verify": "^0.5.27"
+  }
+}
